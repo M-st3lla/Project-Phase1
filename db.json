@@ -1,0 +1,186 @@
+{
+  "gifts": {
+    "PREVIEW OF GIFTS-OCCASIONS": {
+      "Birthday": [
+        {
+          "id": 1,
+          "name": "Flower Bouquet",
+          "description": "A beautiful bouquet of assorted flowers",
+          "recipient": {
+            "gender": "Female",
+            "relationship": "Friend/Family"
+          }
+        },
+
+        {
+          "id": 5,
+          "name": "Tie",
+          "description": "A tie with an endearing pattern and color",
+          "recipient": {
+            "gender": "Male",
+            "relationship": "Partner"
+          }
+        },
+
+
+        {
+          "id": 10,
+          "name": "Customized Mug",
+          "description": "A personalized mug with a birthday message",
+          "recipient": {
+            "gender": "Male",
+            "relationship": "Friend/Family"
+          }
+        }
+
+      ],
+      "ANNIVERSARY": [
+        {
+          "id": 2,
+          "name": "Smartwatch",
+          "description": "A stylish smartwatch with fitness tracking features",
+          "recipient": {
+            "gender": "Male",
+            "relationship": "Partner"
+          }
+        },
+
+
+        {
+          "id": 6,
+          "name": "Spa Gift Basket",
+          "description": "A well sorted spa gift basket that is accompanied with prepaid spa service",
+          "recipient": {
+            "gender": "Female",
+            "relationship": "Friend/Family"
+          }
+        }
+
+      ]
+    },
+    "AGE": {
+      "20s": [
+        {
+          "id": 1,
+          "name": "Flower Bouquet",
+          "description": "A beautiful bouquet of assorted flowers",
+          "occasion": "Birthday",
+          "recipient": {
+            "gender": "Female",
+            "relationship": "Friend/Family"
+          }
+        }
+
+      ],
+      "30s": [
+        {
+          "id": 2,
+          "name": "Smartwatch",
+          "description": "A stylish smartwatch with fitness tracking features",
+          "occasion": "Anniversary",
+          "recipient": {
+            "gender": "Male",
+            "relationship": "Partner"
+          }
+        }
+      ]
+
+    },
+    "CULTURAL INCLINATION": {
+      "Traditional": [
+        {
+          "id": 3,
+          "name": "Handcrafted Shawl",
+          "description": "A beautifully handcrafted shawl made of fine wool",
+          "occasion": "Christmas",
+          "recipient": {
+            "gender": "Female",
+            "relationship": "Mother"
+          }
+        }
+      ],
+
+      "Modern": [
+        {
+          "id": 4,
+          "name": "Wireless Earbuds",
+          "description": "High-quality wireless earbuds with noise cancellation",
+          "occasion": "Graduation",
+          "recipient": {
+            "gender": "Male",
+            "relationship": "Friend/Family"
+          }
+        }
+      ]
+
+    },
+    "FINANCIAL BUDGET": {
+      "Low": [
+        {
+          "id": 5,
+          "name": "Customized Mug",
+          "description": "A personalized mug with a birthday message",
+          "occasion": "Birthday",
+          "recipient": {
+            "gender": "Male",
+            "relationship": "Sibling"
+          }
+        }
+      ],
+
+      "Medium": [
+        {
+          "id": 1,
+          "name": "Flower Bouquet",
+          "description": "A beautiful bouquet of assorted flowers",
+          "occasion": "Birthday",
+          "recipient": {
+            "gender": "Female",
+            "relationship": "Friend"
+          }
+        }
+      ],
+
+      "High": [
+        {
+          "id": 2,
+          "name": "Smartwatch",
+          "description": "A stylish smartwatch with fitness tracking features",
+          "occasion": "Anniversary",
+          "recipient": {
+            "gender": "Male",
+            "relationship": "Spouse"
+          }
+        }
+      ]
+
+    },
+    "RELATIONS": {
+      "Family": [
+        {
+          "id": 3,
+          "name": "Handcrafted Shawl",
+          "description": "A beautifully handcrafted shawl made of fine wool",
+          "occasion": "Christmas",
+          "recipient": {
+            "gender": "Female",
+            "relationship": "Mother"
+          }
+        }
+      ],
+
+      "Friend": [
+        {
+          "id": 4,
+          "name": "Wireless Earbuds",
+          "description": "High-quality wireless earbuds with noise cancellation",
+          "occasion": "Graduation",
+          "recipient": {
+            "gender": "Male",
+            "relationship": "Friend"
+          }
+        }
+      ]
+    }
+  }
+}

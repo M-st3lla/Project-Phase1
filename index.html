@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Prizzzed UP!</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="/images/purplebg.jpeg" type="image/x-icon">
+    <link rel="icon" href="/images/purplebg.jpeg" type="image/x-icon">
+    <style>
+        
+        .form-control {
+            border-radius: 30px; 
+            padding: 15px; 
+            font-size: 18px; 
+            width: 300px; 
+            max-width: 100%; 
+            border: 1px solid #ccc;
+        }
+    </style> 
+</head>
+
+<body>
+    <div id="app">
+        <div id="login-page">
+          <h3 style="color:aliceblue; font-weight:bold; font-size:25px;">Login</h3>
+          <h2 style="font-weight:lighter; color: beige; font-size:30px;">Login to get the full experience or Use PRIZZZED UP without an account</h2>
+          <input type="text" id="login-username" placeholder="Username" style="border-radius:10px; font-size:16px; padding:10px 20px;">
+          <input type="password" id="login-password" placeholder="Password" style="border-radius:10px; font-size:16px; padding:10px 20px;">
+          <button onclick="login()" class="login-button">Login</button>
+        </div>
+        <div id="signup-page" style="display: none;">
+          <h2>Sign Up</h2>
+          <input type="text" id="signup-username" placeholder="Username" style="border-radius:10px; font-size:16px; padding:10px 20px;">
+          <input type="password" id="signup-password" placeholder="Password" style="border-radius:10px; font-size:16px; padding:10px 20px;">
+          <button onclick="signup()">Sign Up</button>
+        </div>
+        <div id="main-page" style="display: none;">
+          <h2>Welcome to <h3 style="font-weight: bold;">PRIZZZED UP</h3></h2>
+          <button onclick="logout()">Logout</button>
+        </div>
+      </div>
+    <h1 style="font-size:450%; font-family:'Roboto',sans-serif; color: hsl(271, 56%, 88%); margin-left:550px; position:static;">Gift Giving Made Easy</h1>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03"
+                aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#bottom">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" aria-disabled="true" href="#bottom">Contact</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit" style="border-radius:8px; cursor:pointer; font-size:20px; background-color: rgb(195, 165, 223);">Search</button>
+                </form>
+                
+                <div class="container-fluid">
+                    <div class="menu-icon" onclick="toggleDropdownMenu()">&#9776;</div>
+                </div>
+                </div>
+                <div class="dropdown-menu" id="dropdownMenu">
+                </div>
+                <div class="ui centered grid">
+                    <div class="four wide column">
+                        <div class="list-container">
+                            <!-- Side menu -->
+                            <ul class="ui divided list" id="giftsList">
+                                <li class="gift-container">
+                                    <div class="header"></div>
+                                    <div class="ui selection dropdown">
+                                        <input type="hidden" name="occasion">
+                                        <i class="dropdown icon"></i>
+                                        <div class="default text"></div>
+                                        <div class="menu">
+                                            <!-- Occasion options will be dynamically added here  -->
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+            
+                    <!-- Gift Details -->
+                    <div class="twelve wide column">
+                        <div class="ui cards" id="giftDetails"> 
+                        </div>
+                    </div>
+                </div>
+            
+            </div>
+        </div>
+        <img src="/images/icons2.jpeg" class="nav-yolo">
+        <img src="images/purplebg.jpeg" class="nav-logo">
+    </nav>
+    <div class="container">
+        <div class="container-sm" id="container1">
+            <div class="imgCo">
+                <a href="#">
+                    <img src="/images/Share.jpeg" style="max-width:250px; max-height:150px;">
+                </a>
+                <h2>Share With Loved Ones</h2>
+                <p><br>Narrow down your gift selection with a range of context-sensitive recommendations carefully
+                    picked out by our bot for your loved ones</p>
+            </div>
+        </div>
+
+        <div class="container-sm" id="container2">
+            <div class="imgCo">
+                    <img src="/images/Fast_Delivery.jpeg" style="max-width:150px; max-height:250px;">
+                <h2>Delivery At Your Door</h2>
+                <p><br>Link with others remotely through our Door-to-Door delivery services</p>
+                </div>
+        </div>
+
+        <div class="container-sm" id="container3">
+            <div class="imgCo">
+                <a href="#">
+                    <img src="/images/Mobile money.jpeg" style="max-width:150px; max-height:250px;">
+                </a>
+                <h2>Secure fast and flexible payment</h2>
+                <p><br>Explore our installment packages which go to upto 18 months after delivery</p>
+            </div>
+        </div>
+
+        <div class="container-sm" id="container4">
+            <div class="imgCo">
+                <a href="#">
+                    <img src="/images/Collaborate.jpeg" style="max-width:150px; max-height:250px;">
+                </a>
+                <h2>Collaborate with family and colleagues</h2><br>
+                <p>Join hands with allies far and near to surprise a fellow right at their Doorstep</p>
+            </div>
+        </div>
+
+        <div class="container-sm" id="container5">
+            <div class="imgCo">
+                <a href="#">
+                    <img src="/images/Every little helps.jpeg" style="max-width:150px; max-height:250px;">
+                </a>
+                <h2>Bridge the gap in support of charity</h2><br>
+                <p>Promote our campaign locally and internationally to fund preparatory schools for kids all over the globe
+                </p>
+            </div>
+        </div>
+    </div>
+    <div style="background-color:rgb(220, 183, 230); color:rgb(15, 15, 80); font-size:larger;">
+        <h3>Prize up with Prizzzed UP</h3>
+        <p>Prizzzed up is a non-profitable organization seeking to encourage hopecore in varying living generations today for  the tomorrow</p><br>
+        <p>Help us spread the love and warmth in wholesome gift-giving. Our mission is to simplify this act by connecting you to both renowned websites and hidden gems where you can grab a gift within your scope</p>
+        <div style="display:flex; font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">
+        <div style="margin-left:300px;">
+         <h3 style="margin-bottom:20px;"><a href="#">Community</a></h3>
+         <p>Get us at <h3 style="font-weight: bold;">@PrizzzedUp</h3>on all our socials</p>
+           <img src="/images/Socials.jpeg" style="max-width:150px; max-height:250px;"> 
+        </div>
+        <div style="margin-left:70px;">
+        <h3 style="margin-bottom:20px;"><a href="#">Help</a></h3>
+        <p>Reach out to us for any concern</p>
+        <img src="/images/support.jpeg" style="max-width:150px; max-height:250px;">
+            <h4><a href="#bottom">Support</a></h4>
+            <h4><a href="#bottom">Contact Us</a></h4>
+        </div>
+    </div>
+    <a id="bottom"></a>
+    <script src="index.js"></script>
+</body>
+
+</html>
