@@ -33,7 +33,7 @@ Ensure you meet the following requirements:
 
 
 ## License
-Licensed under the MIT License
+Licensed under the MIT License.
 
 ## Copyright(c) 2024
 Permission is granted to any person who wishes to use,modify, or distribute this software provided that this copyright notice and this permission notice is included.
