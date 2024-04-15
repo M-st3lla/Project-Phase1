@@ -213,10 +213,6 @@ function submitDeliveryAddress() {
     var address = document.getElementById("address").value;
 
     console.log("Delivery Address:", address);
-
-    document.body.classList.remove("blurred");
-    var popup = document.querySelector(".popup");
-    popup.remove();
 }
 
 function submitPaymentDetails() {
@@ -226,9 +222,6 @@ function submitPaymentDetails() {
     console.log("Payment Method:", paymentMethod);
     console.log("Installments:", installments);
 
-    document.body.classList.remove("blurred");
-    var popup = document.querySelector(".popup");
-    popup.remove();
 }
 
 function submitMessage() {
@@ -237,10 +230,6 @@ function submitMessage() {
 
     console.log("Message:", message);
     console.log("Enter Account:", enterAccount);
-
-    document.body.classList.remove("blurred");
-    var popup = document.querySelector(".popup");
-    popup.remove();
 }
 
 function submitDonation() {
@@ -249,10 +238,6 @@ function submitDonation() {
 
     console.log("Donation Amount:", donationAmount);
     console.log("Payment Method:", paymentMethod);
-
-    document.body.classList.remove("blurred");
-    var popup = document.querySelector(".popup");
-    popup.remove();
 }
 document.addEventListener("DOMContentLoaded", function () {
     var formToggle = document.getElementById("formToggle");
